@@ -3,49 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About | BojanDevs Portfolio</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_32x32.jpg" />
+  <title>About – BojanDevs</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Header & Navbar -->
+  <!-- ======================================= HEADER ======================================= -->
   <header>
-    <h1>BojanDevs</h1>
-    <p>Front-End Developer | HTML • CSS • JavaScript</p>
+    <div class="container">
+      <!-- Top row: Logo + Subtitle -->
+      <div class="header-top">
+        <div class="logo">
+          <h1>BojanDevs</h1>
+        </div>
+        <div class="subtitle">
+          <p>Front-End Developer | HTML • CSS • JavaScript</p>
+        </div>
+      </div>
 
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="about.html" class="active">ABOUT</a></li>
-        <li><a href="projects.html">PROJECTS</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-      </ul>
-    </nav>
+      <!-- Thin divider line -->
+      <div class="divider"></div>
+
+      <!-- Navigation (ABOUT is active) -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html" class="active">ABOUT</a></li>
+          <li><a href="projects.html">PROJECTS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
+  <!-- ======================================= /HEADER ======================================= -->
 
-  <!-- Main About Section -->
+
+  <!-- ======================================= MAIN CONTENT (ABOUT) ======================================= -->
   <main>
-    <section class="projects">
-      <h2>About Me</h2>
+    <section class="about">
+      <h2>About</h2>
       <p>
-        I'm a Computer Science student and front-end web developer with a passion for building responsive, clean, and user-friendly websites. My focus is on mastering HTML, CSS, and JavaScript to deliver functional and visually appealing digital experiences.
+        Greetings! I’m a Front-End Developer who loves crafting neat, responsive web interfaces using <em>HTML</em>, <em>CSS</em>, and <em>JavaScript</em>. Over the past couple of years, I’ve built a small but growing portfolio of personal projects—ranging from simple to-do lists to interactive APIs—each teaching me something new about clean code and user experience.
       </p>
       <p>
-        I enjoy working on real-world projects and continuously learning new technologies. I’m currently building my portfolio to start freelancing and help small businesses grow online.
+        My journey into web development started when I realized how empowering it is to build something from scratch and see it live on the internet. Since then, I’ve focused on:
       </p>
-
-      <a href="resume.pdf" download class="resume-btn">Download Resume</a>
+      <ul>
+        <li>Writing semantic markup and organized CSS (Flexbox &amp; Grid).</li>
+        <li>Mastering vanilla JavaScript fundamentals: DOM manipulation, fetch/async, ES6+ syntax.</li>
+        <li>Diving into React and Next.js basics to understand component-based architecture.</li>
+        <li>Keeping my GitHub repos polished with clear commit messages and robust README files.</li>
+        <li>Ensuring accessibility and mobile-first design in every new project.</li>
+      </ul>
+      <p>
+        Outside of coding, I enjoy experimenting with new CSS techniques, reading about the latest JavaScript features, and contributing to open‐source whenever I can. If you’re curious about my work or want to team up on a project—feel free to check out my <a href="projects.html">Projects</a> or <a href="contact.html">get in touch</a>!
+      </p>
     </section>
   </main>
+  <!-- ======================================= /MAIN CONTENT ======================================= -->
 
-  <!-- Footer -->
+  <!-- ======================================= FOOTER ======================================= -->
   <footer>
-    <section class="contact">
-      <h2>Contact</h2>
-      <p>Email: bojandevs@gmail.com</p>
-      <p>GitHub: <a href="https://github.com/bojandevs" target="_blank">bojandevs</a></p>
-    </section>
+    <div class="footer-container">
+      <p>&copy; 2025 BojanDevs. All rights reserved.</p>
+      <p>
+        <a href="privacy.html">Privacy Policy</a> • 
+        <a href="terms.html">Terms of Service</a>
+      </p>
+    </div>
   </footer>
+  <!-- ======================================= /FOOTER ======================================= -->
 
 </body>
 </html>

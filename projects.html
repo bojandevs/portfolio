@@ -3,46 +3,122 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects - BojanDevs</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_32x32.jpg" />
+  <title>Projects – BojanDevs</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Header & Navbar -->
+  <!-- ======================================= HEADER ======================================= -->
   <header>
-    <h1>BojanDevs</h1>
-    <p>Front-End Developer | HTML • CSS • JavaScript</p>
+    <div class="container">
+      <!-- Top row: Logo + Subtitle -->
+      <div class="header-top">
+        <div class="logo">
+          <h1>BojanDevs</h1>
+        </div>
+        <div class="subtitle">
+          <p>Front-End Developer | HTML • CSS • JavaScript</p>
+        </div>
+      </div>
 
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="projects.html" class="active">PROJECTS</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-      </ul>
-    </nav>
+      <!-- Thin divider line -->
+      <div class="divider"></div>
+
+      <!-- Navigation (PROJECTS is active) -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="projects.html" class="active">PROJECTS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
+  <!-- ======================================= /HEADER ======================================= -->
 
-  <!-- Main Projects Section -->
+
+  <!-- ======================================= MAIN CONTENT (PROJECTS) ======================================= -->
   <main>
-    <section class="projects">
-      <h2>My Projects</h2>
-      <ul>
-        <li>Website 1 – Coming soon!</li>
-        <li>Website 2– Coming soon!</li>
-        <li>Website 3 – Coming soon!</li>
-      </ul>
+    <section class="all-projects">
+      <h2>All Projects</h2>
+
+      <!-- A grid of project cards -->
+      <div class="project-cards">
+        <!-- Example Project Card #1 -->
+        <article class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>
+            The website you’re viewing right now! Built with vanilla <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>. Features responsive design, smooth scrolling, and a flexible layout. Deployed on GitHub Pages.
+          </p>
+          <p>
+            <a href="https://github.com/bojandevs/portfolio" target="_blank">View Code →</a>
+            &nbsp;·&nbsp;
+            <a href="https://bojandevs.github.io/portfolio" target="_blank">Live Demo →</a>
+          </p>
+        </article>
+
+        <!-- Example Project Card #2 -->
+        <article class="project-card">
+          <h3>Weather App</h3>
+          <p>
+            A React-based weather dashboard that fetches data from the <a href="https://openweathermap.org/api" target="_blank">OpenWeatherMap API</a>.  
+            Displays current weather, 5-day forecast, and stores search history in localStorage.  
+            Built with create-react-app, styled-components, and React Hooks.
+          </p>
+          <p>
+            <a href="https://github.com/bojandevs/weather-app" target="_blank">View Code →</a>
+            &nbsp;·&nbsp;
+            <a href="https://bojandevs.github.io/weather-app" target="_blank">Live Demo →</a>
+          </p>
+        </article>
+
+        <!-- Example Project Card #3 -->
+        <article class="project-card">
+          <h3>To-Do List Manager</h3>
+          <p>
+            A vanilla JavaScript application demonstrating basic CRUD operations, drag-and-drop reordering, and persistent task storage using localStorage.  
+            Perfect for practicing core DOM manipulation and event handling.
+          </p>
+          <p>
+            <a href="https://github.com/bojandevs/todo-list" target="_blank">View Code →</a>
+            &nbsp;·&nbsp;
+            <a href="https://bojandevs.github.io/todo-list" target="_blank">Live Demo →</a>
+          </p>
+        </article>
+
+        <!-- Example Project Card #4 (Placeholder) -->
+        <article class="project-card">
+          <h3>Expense Tracker</h3>
+          <p>
+            A simple expense tracker built with <strong>JavaScript</strong> and UI powered by Bootstrap.  
+            Users can add, remove, and categorize expenses. Totals update in real time, and data is saved in localStorage.
+          </p>
+          <p>
+            <a href="#" target="_blank">View Code →</a>
+            &nbsp;·&nbsp;
+            <a href="#" target="_blank">Live Demo →</a>
+          </p>
+        </article>
+
+        <!-- Add more project cards below as needed -->
+      </div>
     </section>
   </main>
+  <!-- ======================================= /MAIN CONTENT ======================================= -->
 
-  <!-- Footer -->
+  <!-- ======================================= FOOTER ======================================= -->
   <footer>
-    <section class="contact">
-      <h2>Contact</h2>
-      <p>Email: bojandevs@gmail.com</p>
-      <p>GitHub: <a href="https://github.com/bojandevs" target="_blank">bojandevs</a></p>
-    </section>
+    <div class="footer-container">
+      <p>&copy; 2025 BojanDevs. All rights reserved.</p>
+      <p>
+        <a href="privacy.html">Privacy Policy</a> • 
+        <a href="terms.html">Terms of Service</a>
+      </p>
+    </div>
   </footer>
+  <!-- ======================================= /FOOTER ======================================= -->
 
 </body>
 </html>

@@ -3,44 +3,102 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact - BojanDevs</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_32x32.jpg" />
+  <title>Contact – BojanDevs</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Header & Navbar -->
+  <!-- ======================================= HEADER ======================================= -->
   <header>
-    <h1>BojanDevs</h1>
-    <p>Front-End Developer | HTML • CSS • JavaScript</p>
+    <div class="container">
+      <!-- Top row: Logo + Subtitle -->
+      <div class="header-top">
+        <div class="logo">
+          <h1>BojanDevs</h1>
+        </div>
+        <div class="subtitle">
+          <p>Front-End Developer | HTML • CSS • JavaScript</p>
+        </div>
+      </div>
 
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="projects.html">PROJECTS</a></li>
-        <li><a href="contact.html" class="active">CONTACT</a></li>
-      </ul>
-    </nav>
+      <!-- Thin divider line -->
+      <div class="divider"></div>
+
+      <!-- Navigation (CONTACT is active) -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="projects.html">PROJECTS</a></li>
+          <li><a href="contact.html" class="active">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
+  <!-- ======================================= /HEADER ======================================= -->
 
-  <!-- Main Contact Section -->
+
+  <!-- ======================================= MAIN CONTENT (CONTACT) ======================================= -->
   <main>
-    <section class="contact">
-      <h2>Get in Touch</h2>
-      <p>If you're interested in working together, feel free to reach out.</p>
-      <p><strong>Email:</strong> <a href="mailto:bojandevs@gmail.com">bojandevs@gmail.com</a></p>
-      <p><strong>GitHub:</strong> <a href="https://github.com/bojandevs" target="_blank">github.com/bojandevs</a></p>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer>
+    <!-- 4. CONTACT SECTION -->
     <section class="contact">
       <h2>Contact</h2>
-      <p>Email: bojandevs@gmail.com</p>
-      <p>GitHub: <a href="https://github.com/bojandevs" target="_blank">bojandevs</a></p>
+      <div class="contact-info">
+        <p>
+          <strong>Email:</strong> 
+          <a href="mailto:bojandevs@gmail.com">bojandevs@gmail.com</a>
+        </p>
+
+        <p>
+          <strong>GitHub:</strong> 
+          <a href="https://github.com/bojandevs" target="_blank">github.com/bojandevs</a>
+        </p>
+
+        <p>
+          <strong>LinkedIn:</strong> 
+          <a href="https://www.linkedin.com/in/bojandevs" target="_blank">linkedin.com/in/bojandevs</a>
+        </p>
+
+        <p>
+          <strong>Twitter:</strong> 
+          <a href="https://twitter.com/bojandevs" target="_blank">@bojandevs</a>
+        </p>
+      </div>
+
+      <!-- Optional: Simple contact form 
+      <div class="contact-form">
+        <h3>Send a Message</h3>
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="_replyto" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+      -->
     </section>
+  </main>
+  <!-- ======================================= /MAIN CONTENT ======================================= -->
+
+
+  <!-- ======================================= FOOTER ======================================= -->
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2025 BojanDevs. All rights reserved.</p>
+      <p>
+        <a href="privacy.html">Privacy Policy</a> • 
+        <a href="terms.html">Terms of Service</a>
+      </p>
+    </div>
   </footer>
+  <!-- ======================================= /FOOTER ======================================= -->
 
 </body>
 </html>

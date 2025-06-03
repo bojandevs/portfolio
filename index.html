@@ -3,42 +3,152 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home - BojanDevs</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_32x32.jpg" />
+  <title>Home – BojanDevs</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Header & Navigation -->
+  <!-- ======================================= HEADER ======================================= -->
   <header>
-    <h1>BojanDevs</h1>
-    <p>Front-End Developer | HTML • CSS • JavaScript</p>
+    <div class="container">
+      <!-- Top row: Logo + Subtitle, stacked & centered -->
+      <div class="header-top">
+        <div class="logo">
+          <h1>BojanDevs</h1>
+        </div>
+        <div class="subtitle">
+          <p>Front-End Developer | HTML • CSS • JavaScript</p>
+        </div>
+      </div>
 
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">HOME</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="projects.html">PROJECTS</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-      </ul>
-    </nav>
+      <!-- Thin divider line -->
+      <div class="divider"></div>
+
+      <!-- Bottom row: Navigation links, centered -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="projects.html">PROJECTS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
+  <!-- ======================================= /HEADER ======================================= -->
 
-  <!-- Main Home Content -->
+  <!-- ======================================= MAIN CONTENT ======================================= -->
   <main>
-    <section class="home">
+    <!-- 1. WELCOME / ABOUT ME -->
+    <section class="welcome">
       <h2>Welcome!</h2>
-      <p>This is my personal portfolio where I showcase my web development projects and share what I’m learning as a Computer Science student.</p>
+      <p>
+        I’m a Front-End Developer who loves building clean, responsive web interfaces with <em>HTML</em>, <em>CSS</em>, and <em>JavaScript</em>. 
+        I enjoy experimenting with new CSS layouts, learning modern JavaScript libraries, and sharing my progress on GitHub.
+      </p>
+      <p>
+        Feel free to explore my work below or get in touch if you’d like to collaborate on a project!
+      </p>
     </section>
-  </main>
 
-  <!-- Footer -->
-  <footer>
+    <hr class="section-divider" />
+
+    <!-- 2. SKILLS & TECHNOLOGIES -->
+    <section class="skills">
+      <h2>Skills &amp; Technologies</h2>
+      <ul>
+        <li><strong>HTML5 &amp; CSS3</strong> – Semantic markup, Flexbox, Grid</li>
+        <li><strong>JavaScript (ES6+)</strong> – DOM manipulation, Fetch API, vanilla JS</li>
+        <li><strong>React.js / Next.js</strong> – Basic component structure, hooks, routing</li>
+        <li><strong>Git &amp; GitHub</strong> – Version control, pull requests, branching workflows</li>
+        <li><strong>Responsive Design</strong> – Mobile-first layouts, media queries, fluid grids</li>
+      </ul>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- 3. FEATURED PROJECTS (TEASER) -->
+    <section class="featured-projects">
+      <h2>Featured Projects</h2>
+      <div class="project-cards">
+        <!-- Project Card #1 -->
+        <article class="project-card">
+          <h3>Portfolio Website (this site!)</h3>
+          <p>
+            A fully responsive, single-page portfolio built from scratch using vanilla <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>. 
+            Deployed on GitHub Pages with live navigation, smooth scrolling, and a mobile-friendly layout.
+          </p>
+          <p>
+            <a href="https://github.com/bojandevs/portfolio" target="_blank">View Code →</a>
+            &nbsp;·&nbsp;
+            <a href="https://bojandevs.github.io/portfolio" target="_blank">Live Demo →</a>
+          </p>
+        </article>
+
+        <!-- Project Card #2 (Placeholder) -->
+        <article class="project-card">
+          <h3>Weather App</h3>
+          <p>
+            A small React-based application that fetches real-time weather data from the 
+            <a href="https://openweathermap.org/api" target="_blank">OpenWeatherMap API</a>.  
+            Shows current conditions, 5-day forecast, and search history stored in localStorage.
+          </p>
+          <p>
+            <a href="#" target="_blank">View Code →</a>
+            &nbsp;·&nbsp;
+            <a href="#" target="_blank">Live Demo →</a>
+          </p>
+        </article>
+
+        <!-- Project Card #3 (Placeholder) -->
+        <article class="project-card">
+          <h3>To-Do List Manager</h3>
+          <p>
+            A vanilla JavaScript To-Do List that demonstrates basic CRUD operations, drag-and-drop reordering, 
+            and persistent storage using localStorage. Perfect for learning fundamental DOM manipulation.
+          </p>
+          <p>
+            <a href="#" target="_blank">View Code →</a>
+            &nbsp;·&nbsp;
+            <a href="#" target="_blank">Live Demo →</a>
+          </p>
+        </article>
+      </div>
+
+      <p class="all-projects-link">
+        <a href="projects.html">See all projects →</a>
+      </p>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- 4. CONTACT SECTION -->
     <section class="contact">
       <h2>Contact</h2>
-      <p>Email: bojandevs@gmail.com</p>
-      <p>GitHub: <a href="https://github.com/bojandevs" target="_blank">bojandevs</a></p>
+      <p><strong>Email:</strong> <a href="mailto:bojandevs@gmail.com">bojandevs@gmail.com</a></p>
+      <p><strong>GitHub:</strong> 
+        <a href="https://github.com/bojandevs" target="_blank">github.com/bojandevs</a>
+      </p>
+      <p>
+        Feel free to connect on <a href="https://www.linkedin.com/in/bojandevs" target="_blank">LinkedIn</a> 
+        or DM me on <a href="https://twitter.com/bojandevs" target="_blank">Twitter</a>.
+      </p>
     </section>
+  </main>
+  <!-- ======================================= /MAIN CONTENT ======================================= -->
+
+  <!-- ======================================= FOOTER ======================================= -->
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2025 BojanDevs. All rights reserved.</p>
+      <p>
+        <a href="privacy.html">Privacy Policy</a> • 
+        <a href="terms.html">Terms of Service</a>
+      </p>
+    </div>
   </footer>
+  <!-- ======================================= /FOOTER ======================================= -->
 
 </body>
 </html>
