@@ -1,26 +1,135 @@
+/* === CSS RESET === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* === BASE STYLES === */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
 }
+
+/* === HEADER (Hero Section) === */
 header {
-    background-color: #222;
-    color: white;
-    padding: 20px;
-    text-align: center;
+  background-color: #222;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
 }
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* === NAVBAR === */
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  left: 0;
+  bottom: -5px;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+
+/* === HOME SECTION === */
+.home {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.home h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.home p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* === PROJECTS & CONTACT === */
 .projects, .contact {
-    padding: 20px;
-    max-width: 800px;
-    margin: auto;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
 }
+
 h2 {
-    border-bottom: 2px solid #ccc;
-    padding-bottom: 5px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
 }
+
+/* === LINKS === */
 a {
-    color: #0066cc;
+  color: #0066cc;
+}
+
+/* === RESUME BUTTON === */
+.resume-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0066cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.resume-btn:hover {
+  background-color: #004a99;
+}
+
+.projects ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 15px;
+}
+
+.projects li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
 }
