@@ -10,7 +10,8 @@ const ProfileSection = () => {
                                                        src="/portrait.png"
                                                        alt="Profile"
                                                        fill
-                                                       className="object-cover object-center"
+                                                       className="object-cover object-[50%_20%]"
+                                                       style={{ objectPosition: '50% 20%' }}
                                                        priority
                                                         />
 					</div>
