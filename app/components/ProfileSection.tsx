@@ -10,7 +10,7 @@ const ProfileSection = () => {
 							src="/portrait.png"
 							alt="Profile"
 							fill
-							className="object-cover object-[50%_20%]" // 60% pushes image down
+                                                        className="object-cover object-[50%_20%]" // 20% vertical offset
 							priority
 							/>
 					</div>
