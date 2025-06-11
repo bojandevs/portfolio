@@ -10,7 +10,7 @@ const ProjectsSection = () => {
 		{
 			title: 'Coming Soon!',
 			description:
-				"This will be for a next project im working on!.",
+				"This will be for the next project I'm working on!",
 			tech: ['Next.js', 'TailwindCSS', 'Vercel'],
 			link: 'https://yourname.vercel.app',
 		},
