@@ -5,16 +5,16 @@ const ProfileSection = () => {
 		<div className="w-full py-8 md:py-0 bg-white dark:bg-gray-900 px-6 pt-16 sm:pt-0">
 			<div className="space-y-8 text-center">
 				<div className="relative w-28 md:w-40 h-28 md:h-40 mx-auto">
-					<div className="relative w-full h-full rounded-full overflow-hidden ring-2 ring-gray-200 dark:ring-gray-700">
+					<div className="w-[160px] h-[165px] rounded-full overflow-hidden ring-2 ring-gray-200 dark:ring-gray-700 mx-auto">
 						<Image
-						    src="/portrait.png"
-						    alt="Profile"
-						    fill
-						    className="object-cover object-[50%_20%]"
-						    style={{ objectPosition: '50% 20%' }}
-						    priority
+							src="/portrait.png"
+							alt="Profile"
+							width={160}
+							height={160}
+							priority
 						/>
-					</div>
+				</div>
+
 
 				</div>
 
