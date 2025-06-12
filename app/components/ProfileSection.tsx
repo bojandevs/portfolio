@@ -14,6 +14,7 @@ const ProfileSection = () => {
 						    style={{ objectPosition: '50% 20%' }}
 						    priorityAdd commentMore actions
 						/>
+					</div>
 				</div>
 
 				<div className="space-y-3">
