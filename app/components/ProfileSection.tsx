@@ -12,6 +12,7 @@ const ProfileSection = () => {
 						    fill
 						    className="object-cover object-[50%_20%]"
 						    style={{ objectPosition: '50% 20%' }}
+						    priority
 						  />
 					</div>
 
